@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #495e57;
+}
+.start{
+    padding: 2rem;
+}
+h1{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    color: #ecdda1;
+}
+h2, p{
+    display: block;
+    width: 30rem;
+    color: white;
+}
+h2{
+    font-size: 30px;
+}
+button{
+    background-color: #ecdda1;
+    font-weight: bold;
+    color: #495e57;
+    width: 15rem;
+    height: 5rem;
+    font-size: large;
+    border-radius: 50px 50px ;
+}
+button:hover{
+    background-color: #495e57;
+    color: #ecdda1;
+}
+Card{
+    background-color: #ecdda1;
+    display: block;
+    justify-content: center;
+}
+.allc{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
