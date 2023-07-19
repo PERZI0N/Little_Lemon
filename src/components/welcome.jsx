@@ -1,9 +1,10 @@
 import "./welcome.css";
-import { Link,Route } from 'react-router-dom';
-import { Container, Card, Col, Button } from "react-bootstrap";
+import { Link} from "react-router-dom";
+import { Card} from "react-bootstrap";
 import greeksalad from "S:/lilltllemon/lemon/src/icons_assets/greek salad.jpg";
 import pizza from "S:/lilltllemon/lemon/src/icons_assets/pizza.jpg";
 import dosa from "S:/lilltllemon/lemon/src/icons_assets/dosa.jpg";
+import { useState } from "react";
 export default function Welcome() {
   const cardst = {
     width: "18rem",
@@ -12,7 +13,7 @@ export default function Welcome() {
     padding: "10px",
     justifyContent: "center",
     alignItems: "center",
-    borderRadius: "5%"
+    borderRadius: "5%",
   };
   const stimg = {
     height: "18rem",
@@ -31,14 +32,17 @@ export default function Welcome() {
       </p>
       <p>How can we help you?</p>
       <div className="buttons">
-      <a href="https://bobbyhadz.com" target="_blank" rel="noopener noreferrer">
-      <button> Reserve a Table</button>
-      </a>
-      <br/>
-      <a href="https://bobbyhadz.com" target="_blank" rel="noopener noreferrer">
-      <button>Order for Delivery</button>
-      </a>
-      </div>
+        <Link className="links"
+          to="/login"
+          >
+          Reserve a Table
+        </Link>
+        <Link className="links"
+          to="/login"
+          >
+          Order for Delivery
+        </Link>
+        </div>
       <div className="cards">
         <h2>Our Special Dishes of the Week</h2>
         <div className="allc">
@@ -63,7 +67,8 @@ export default function Welcome() {
               <Card.Text
                 style={{ width: "17rem", color: "#495e57", fontWeight: "bold" }}
               >
-                Delicious, cheesy, and versatile, pizza is a beloved Italian dish consisting of a thin crust topped with various ingredients.
+                Delicious, cheesy, and versatile, pizza is a beloved Italian
+                dish consisting of a thin crust topped with various ingredients.
               </Card.Text>
             </Card.Body>
           </Card>
@@ -74,8 +79,10 @@ export default function Welcome() {
               <Card.Title>Dosa</Card.Title>
               <Card.Text
                 style={{ width: "17rem", color: "#495e57", fontWeight: "bold" }}
-              >Crispy, savory, and South Indian in origin, dosa is a thin, fermented 
-              crepe made from rice and lentil batter, often served with chutney and sambar.
+              >
+                Crispy, savory, and South Indian in origin, dosa is a thin,
+                fermented crepe made from rice and lentil batter, often served
+                with chutney and sambar.
               </Card.Text>
             </Card.Body>
           </Card>
