@@ -1,10 +1,9 @@
 import "./welcome.css";
 import { Link} from "react-router-dom";
 import { Card} from "react-bootstrap";
-import greeksalad from "S:/lilltllemon/lemon/src/icons_assets/greek salad.jpg";
-import pizza from "S:/lilltllemon/lemon/src/icons_assets/pizza.jpg";
-import dosa from "S:/lilltllemon/lemon/src/icons_assets/dosa.jpg";
-import { useState } from "react";
+import greeksalad from "./icons_assets/greek_salad.jpg";
+import pizza from "./icons_assets/pizza.jpg";
+import dosa from "./icons_assets/dosa.jpg";
 export default function Welcome() {
   const cardst = {
     width: "18rem",
