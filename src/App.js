@@ -23,8 +23,6 @@ function App() {
         <Route path='/reservation' exact element={<Reservation/>}/>
         <Route path='/final' exact element={<Final/>}/>
     </Routes>
-      {/* <Welcome/> */}
-      {/* <Main/> */}
       <Footer/>
     </div>
   );

@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+.start{
+    height: calc(100vh - 5 REM);
+}
 body{
     margin: 0;
 }
